@@ -23,8 +23,8 @@
 
 | # | 标题 | 难度 | 所属层级 | 发布时间 |
 |---|------|------|----------|----------|
-| 02 | [Agent 技术全景图](articles/tech-deep-dive/02-Agent技术全景图.md) | 入门 | 全景 | 2026-06 |
-| 03 | [ReAct 深度解析：从原理到手写实现](articles/tech-deep-dive/03-ReAct深度解析.md) | 进阶 | 第3层：核心能力 | 2026-06 |
+| 02 | [Agent 技术全景图：从概念到落地，一张图看懂 Agent 技术栈](articles/tech-deep-dive/02-Agent技术全景图.md) | 入门 | 全景 | 2026-06 |
+| 03 | [Agent 决策机制深度解析：从四大模式到混合架构，看懂 Agent 如何思考与行动](articles/tech-deep-dive/03-Agent决策机制深度解析.md) | 进阶 | 第3层：决策推理 | 2026-06 |
 
 ### 实战案例分享
 
@@ -51,7 +51,7 @@
 ## 技术栈与工具
 
 - **框架**：LangChain / LangGraph / 自研
-- **决策模式**：ReAct / Reflection / Reflexion / Plan-and-Execute
+- **决策模式**：ReAct / Plan-and-Solve / Router / 混合决策（Static+Dynamic / Dual-LLM）
 - **LLM**：Qwen / GPT / Claude（视场景选型）
 - **微调方法**：SFT / GRPO
 - **向量数据库**：Milvus / Chroma
@@ -63,16 +63,24 @@
 
 ```
 agent-tech-notes/
-├── articles/           # 公众号文章 Markdown 源文件
-│   ├── tech-deep-dive/ # 技术深度解析
-│   ├── real-practice/  # 实战案例分享
-│   ├── frontier/       # 前沿洞察与趋势
-│   └── others/         # 课程相关 / 其他
-├── code/               # 文章配套代码
-│   ├── react_agent/    # ReAct 手写实现
-│   ├── memory_demo/   # Memory 模块示例
-│   └── eval_framework/ # Agent 评测框架
-├── images/             # 文章配图
+├── articles/                    # 公众号文章 Markdown 源文件
+│   ├── tech-deep-dive/          # 技术深度解析
+│   ├── real-practice/           # 实战案例分享
+│   ├── frontier/               # 前沿洞察与趋势
+│   └── others/                  # 课程相关 / 其他
+├── code/                        # 文章配套代码
+│   ├── decision_mechanism/      # 决策机制系列（对应 03 号文章）
+│   │   ├── react_agent.py       #   ReAct 经典自主决策（2.1 节）
+│   │   ├── plan_and_solve.py    #   Plan-and-Solve 先规划后执行（2.2 节）
+│   │   ├── router_agent.py     #   Router 确定性工作流（3.1 节）
+│   │   └── hybrid_agent.py      #   混合决策：静态规划+动态执行（5.1 节）
+│   ├── react_agent/            # ReAct 手写实现（独立完整版）
+│   ├── memory_demo/            # Memory 模块示例
+│   ├── eval_framework/          # Agent 评测框架
+│   └── local/                   # 本地工具脚本
+│       └── generate_cover.py    #   封面图生成
+├── images/                      # 文章配图 / 封面图
+├── .vscode/                     # VS Code 配置（含 launch.json 调试配置）
 └── README.md
 ```
 
@@ -82,11 +90,11 @@ agent-tech-notes/
 
 ```
 第1阶段（入门）
-  01-发刊词 → 02-技术全景图 → 03-ReAct 深度解析
+  01-发刊词 → 02-技术全景图 → 03-决策机制深度解析
   → 用 LangChain 写一个最简单的工具调用 Agent
 
 第2阶段（进阶）
-  → ReAct 深度解析（本文）
+  → ReAct 深度解析与手写实现
   → Memory 模块设计
   → Reflection/Reflexion 实现
   → 能独立搭建单 Agent 系统
