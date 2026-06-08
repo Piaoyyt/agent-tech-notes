@@ -1,0 +1,145 @@
+<svg width="100%" viewBox="0 0 680 820" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Agent 技术全景图：六层架构</title>
+<desc>Agent技术栈从底层基础设施到顶层多Agent协作的六层架构全景图</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<style>
+.t{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;font-weight:500;fill:#2C2C2A}
+.ts{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:400;fill:#5F5E5A}
+.th{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:500;fill:#2C2C2A}
+.num{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:18px;font-weight:500}
+.badge-text{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:12px;font-weight:500}
+.content-text{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:11px;font-weight:400;fill:#5F5E5A}
+.sub-title{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:11px;font-weight:500;fill:#444441}
+</style>
+</defs>
+
+<rect x="40" y="16" width="600" height="28" rx="4" fill="#1D9E75" opacity="0.08"/>
+<text class="th" x="340" y="35" text-anchor="middle" fill="#0F6E56" font-size="13">Agent 技术全景图 · 六层架构</text>
+
+<g transform="translate(40,52)">
+<rect x="0" y="0" width="600" height="108" rx="12" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+<text class="num" x="20" y="26" fill="#3B6D11">6</text>
+<text class="badge-text" x="40" y="26" fill="#27500A">多 Agent 协作与编排</text>
+<text class="content-text" x="20" y="46">多个专业化大 Agent 通过协议协作，完成跨环节复杂任务</text>
+<rect x="16" y="58" width="176" height="38" rx="6" fill="white" stroke="#C0DD97" stroke-width="0.5"/>
+<text class="sub-title" x="104" y="73" text-anchor="middle">A2A 架构</text>
+<text class="content-text" x="104" y="87" text-anchor="middle">Agent间协议协作</text>
+<rect x="212" y="58" width="176" height="38" rx="6" fill="white" stroke="#C0DD97" stroke-width="0.5"/>
+<text class="sub-title" x="300" y="73" text-anchor="middle">任务分解与流转</text>
+<text class="content-text" x="300" y="87" text-anchor="middle">端到端目标拆解</text>
+<rect x="408" y="58" width="176" height="38" rx="6" fill="white" stroke="#C0DD97" stroke-width="0.5"/>
+<text class="sub-title" x="496" y="73" text-anchor="middle">编排策略</text>
+<text class="content-text" x="496" y="87" text-anchor="middle">中心化 vs 去中心化</text>
+</g>
+
+<path d="M340 164 L340 172" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<g transform="translate(40,176)">
+<rect x="0" y="0" width="600" height="108" rx="12" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+<text class="num" x="20" y="26" fill="#993C1D">5</text>
+<text class="badge-text" x="40" y="26" fill="#712B13">业务 Agent 深度开发</text>
+<text class="content-text" x="20" y="46">在某一个业务环节，打造一个深度业务 Agent —— 大 Agent + 子Agent + Skill</text>
+<rect x="16" y="58" width="176" height="38" rx="6" fill="white" stroke="#F5C4B3" stroke-width="0.5"/>
+<text class="sub-title" x="104" y="73" text-anchor="middle">大 Agent</text>
+<text class="content-text" x="104" y="87" text-anchor="middle">整体目标决策者</text>
+<rect x="212" y="58" width="176" height="38" rx="6" fill="white" stroke="#F5C4B3" stroke-width="0.5"/>
+<text class="sub-title" x="300" y="73" text-anchor="middle">子 Agent 调度</text>
+<text class="content-text" x="300" y="87" text-anchor="middle">做选择题和填空题</text>
+<rect x="408" y="58" width="176" height="38" rx="6" fill="white" stroke="#F5C4B3" stroke-width="0.5"/>
+<text class="sub-title" x="496" y="73" text-anchor="middle">Skill 编排</text>
+<text class="content-text" x="496" y="87" text-anchor="middle">做应用题(纯粹执行)</text>
+</g>
+
+<path d="M340 288 L340 296" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<g transform="translate(40,300)">
+<rect x="0" y="0" width="600" height="108" rx="12" fill="#FAEEDA" stroke="#FAC775" stroke-width="0.5"/>
+<text class="num" x="20" y="26" fill="#854F0B">4</text>
+<text class="badge-text" x="40" y="26" fill="#633806">Agent 系统框架</text>
+<text class="content-text" x="20" y="46">把核心能力模块组装成可运行系统的框架层</text>
+<rect x="16" y="58" width="176" height="38" rx="6" fill="white" stroke="#FAC775" stroke-width="0.5"/>
+<text class="sub-title" x="104" y="73" text-anchor="middle">LangChain</text>
+<text class="content-text" x="104" y="87" text-anchor="middle">快速原型 / 简单链式</text>
+<rect x="212" y="58" width="176" height="38" rx="6" fill="white" stroke="#FAC775" stroke-width="0.5"/>
+<text class="sub-title" x="300" y="73" text-anchor="middle">LangGraph</text>
+<text class="content-text" x="300" y="87" text-anchor="middle">复杂状态机 / 条件分支</text>
+<rect x="408" y="58" width="176" height="38" rx="6" fill="white" stroke="#FAC775" stroke-width="0.5"/>
+<text class="sub-title" x="496" y="73" text-anchor="middle">自研框架</text>
+<text class="content-text" x="496" y="87" text-anchor="middle">性能/安全特殊需求</text>
+</g>
+
+<path d="M340 412 L340 420" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<g transform="translate(40,424)">
+<rect x="0" y="0" width="600" height="172" rx="12" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+<text class="num" x="20" y="26" fill="#534AB7">3</text>
+<text class="badge-text" x="40" y="26" fill="#3C3489">核心能力模块</text>
+<text class="content-text" x="20" y="46">Agent 技术的「心脏」—— 三个模块交融运作，系统才能活起来</text>
+
+<rect x="16" y="60" width="176" height="100" rx="8" fill="white" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="sub-title" x="104" y="80" text-anchor="middle" fill="#534AB7">决策推理</text>
+<rect x="28" y="88" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="104" y="102" text-anchor="middle">ReAct</text>
+<rect x="28" y="112" width="73" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="64" y="126" text-anchor="middle">Reflection</text>
+<rect x="107" y="112" width="73" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="143" y="126" text-anchor="middle">Reflexion</text>
+<rect x="28" y="136" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="104" y="150" text-anchor="middle">Plan-and-Execute</text>
+
+<rect x="212" y="60" width="176" height="100" rx="8" fill="white" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="sub-title" x="300" y="80" text-anchor="middle" fill="#534AB7">记忆管理</text>
+<rect x="224" y="88" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="300" y="102" text-anchor="middle">短期记忆 · 上下文窗口</text>
+<rect x="224" y="112" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="300" y="126" text-anchor="middle">长期记忆 · 向量/图谱</text>
+<rect x="224" y="136" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="300" y="150" text-anchor="middle">工作记忆 · 中间状态</text>
+
+<rect x="408" y="60" width="176" height="100" rx="8" fill="white" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="sub-title" x="496" y="80" text-anchor="middle" fill="#534AB7">工具调用</text>
+<rect x="420" y="88" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="496" y="102" text-anchor="middle">Function Calling</text>
+<rect x="420" y="112" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="496" y="126" text-anchor="middle">工具描述优化</text>
+<rect x="420" y="136" width="152" height="20" rx="4" fill="#EEEDFE" stroke="#CECBF6" stroke-width="0.5"/>
+<text class="content-text" x="496" y="150" text-anchor="middle">编排 / 错误处理</text>
+</g>
+
+<path d="M340 600 L340 608" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<g transform="translate(40,612)">
+<rect x="0" y="0" width="600" height="82" rx="12" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+<text class="num" x="20" y="26" fill="#0F6E56">2</text>
+<text class="badge-text" x="40" y="26" fill="#085041">LLM 能力层</text>
+<text class="content-text" x="20" y="46">Agent 的大脑，决定整个系统的决策质量</text>
+<rect x="16" y="56" width="176" height="20" rx="4" fill="white" stroke="#9FE1CB" stroke-width="0.5"/>
+<text class="content-text" x="104" y="70" text-anchor="middle">模型选型 · GPT/Claude/Qwen</text>
+<rect x="212" y="56" width="176" height="20" rx="4" fill="white" stroke="#9FE1CB" stroke-width="0.5"/>
+<text class="content-text" x="300" y="70" text-anchor="middle">微调 · SFT / GRPO</text>
+<rect x="408" y="56" width="176" height="20" rx="4" fill="white" stroke="#9FE1CB" stroke-width="0.5"/>
+<text class="content-text" x="496" y="70" text-anchor="middle">评测 · 成本路由 · MoE</text>
+</g>
+
+<path d="M340 698 L340 706" stroke="#B4B2A9" stroke-width="1" marker-end="url(#arrow)" fill="none"/>
+
+<g transform="translate(40,710)">
+<rect x="0" y="0" width="600" height="82" rx="12" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+<text class="num" x="20" y="26" fill="#185FA5">1</text>
+<text class="badge-text" x="40" y="26" fill="#0C447C">基础设施</text>
+<text class="content-text" x="20" y="46">最容易被忽视、但最影响系统稳定性的部分</text>
+<rect x="16" y="56" width="136" height="20" rx="4" fill="white" stroke="#B5D4F4" stroke-width="0.5"/>
+<text class="content-text" x="84" y="70" text-anchor="middle">向量数据库</text>
+<rect x="164" y="56" width="136" height="20" rx="4" fill="white" stroke="#B5D4F4" stroke-width="0.5"/>
+<text class="content-text" x="232" y="70" text-anchor="middle">API 网关与限流</text>
+<rect x="312" y="56" width="136" height="20" rx="4" fill="white" stroke="#B5D4F4" stroke-width="0.5"/>
+<text class="content-text" x="380" y="70" text-anchor="middle">监控与可观测</text>
+<rect x="460" y="56" width="124" height="20" rx="4" fill="white" stroke="#B5D4F4" stroke-width="0.5"/>
+<text class="content-text" x="522" y="70" text-anchor="middle">缓存层</text>
+</g>
+
+<text class="ts" x="340" y="812" text-anchor="middle" font-size="11" fill="#888780">Agent 技术笔记 · 全景图总览</text>
+</svg>
